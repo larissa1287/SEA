@@ -1,0 +1,176 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo */
+}
+
+header {
+    background-color: #0D5D82; /* Define a cor de fundo do cabeçalho como azul escuro */
+    padding: 15px; /* Adiciona um preenchimento de 15px ao redor do conteúdo do cabeçalho */
+    height: 40px; /* Define a altura do cabeçalho como 40px */
+}
+
+/* Estilo do Container Principal */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto; /* Centraliza o container */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #2C3E50; /* Cor do título */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    color: #2C3E50; /* Cor do texto */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do Formulário */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1 1 45%; /* Define a largura de cada campo para 45% do container */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    flex: 1 1 100%; /* Campo de largura total */
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select {
+    padding: 10px; /* Espaçamento interno */
+    font-size: 14px;
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%; /* Ocupa toda a largura */
+    box-sizing: border-box; /* Inclui padding e bordas na largura */
+}
+
+/* Botão de Submissão */
+input[type="submit"] {
+    background-color: #2C3E50; /* Cor de fundo do botão */
+    color: white;
+    padding: 10px; /* Espaçamento interno */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Ocupa toda a largura */
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1A242F; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o campo de senha */
+input[type="password"] {
+    padding-right: 40px; /* Espaço para o ícone */
+}
+
+/* Estilos para o ícone de olho */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.toggle-password img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Alinhamento correto para o ícone dentro da form-group */
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+/* Footer */
+footer {
+    background-color: #1b5a72; /* Cor de fundo padronizada */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    flex-shrink: 0; /* Impede que o footer seja encolhido */
+    display: flex;
+    flex-direction: column; /* Adiciona flexbox em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    flex-wrap: wrap;
+    text-align: center; /* Centraliza o texto */
+}
+
+footer .footer-content .logo img {
+    height: 50px;
+}
+
+footer .contact-info {
+    font-size: 14px;
+    margin-bottom: 20px; /* Adiciona margem inferior para espaçamento */
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    height: 20px;
+    width: 20px;
+}
+
+footer .footer-bottom {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 100%; /* Garante que o texto ocupe toda a largura do footer */
+}

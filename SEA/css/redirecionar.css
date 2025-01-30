@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Substitua pelo URL da imagem de fundo */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Adiciona flexbox para organizar o layout */
+    min-height: 100vh; /* Garante que o corpo ocupe a altura mínima da tela */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid #0A5296;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    max-height: 80px;
+    width: auto;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    header .logo img {
+        max-height: 60px;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0D5D82;
+}
+
+.usuario {
+    position: relative;
+}
+
+.usuario img {
+    max-height: 80px;
+    width: auto;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.usuario img:hover {
+    opacity: 0.8;
+}
+
+#login-popup {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    width: 180px;
+    text-align: center;
+}
+
+#login-popup a {
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+#login-popup a:hover {
+    color: #0D5D82;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+}
+
+.circle {
+    background-color: #1b5a72;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    margin: 0 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.circle:hover {
+    background-color: #154a5b;
+}
+
+/* Footer */
+footer {
+    background-color: #1b5a72; /* Cor de fundo padronizada */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    flex-shrink: 0; /* Impede que o footer seja encolhido */
+    display: flex;
+    flex-direction: column; /* Adiciona flexbox em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    flex-wrap: wrap;
+    text-align: center; /* Centraliza o texto */
+}
+
+footer .footer-content .logo img {
+    height: 50px;
+}
+
+footer .contact-info {
+    font-size: 14px;
+    margin-bottom: 20px; /* Adiciona margem inferior para espaçamento */
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    height: 20px;
+    width: 20px;
+}
+
+footer .footer-bottom {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center; /* Centraliza o texto */
+}

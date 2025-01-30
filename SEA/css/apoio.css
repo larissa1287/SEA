@@ -1,0 +1,267 @@
+/* Variáveis globais */
+:root {
+    --primary-color: #1b5a72;
+    --secondary-color: #004080;
+    --background-light: #f3f4f6;
+    --hover-color: #003366;
+    --text-color: #333;
+    --white: #ffffff;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Reset e estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Substitua pelo URL da imagem de fundo */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Adiciona flexbox para organizar conteúdo */
+    min-height: 100vh; /* Garante que a altura mínima seja a altura total da tela */
+}
+
+header {
+    background-color: var(--white);
+    color: var(--white);
+    padding: 10px 20px;
+    border-bottom: 2px solid #0A5296;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo img {
+    max-height: 80px; /* Aumenta a altura máxima da logo */
+    width: auto; /* Mantém a proporção da logo */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0D5D82;
+}
+
+.usuario {
+    position: relative;
+}
+
+.usuario img {
+    max-height: 80px; /* Aumenta a altura máxima do ícone de usuário */
+    width: auto; /* Mantém a proporção do ícone */
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.usuario img:hover {
+    opacity: 0.8;
+}
+
+#login-popup {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    width: 180px;
+    text-align: center;
+}
+
+#login-popup a {
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+#login-popup a:hover {
+    color: #0D5D82;
+}
+
+.usuario:hover #login-popup {
+    display: block;
+}
+
+/* Container principal */
+.container {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+/* Seletor de cidades */
+.cidade-seletor-container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e8f1f5;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    max-width: 90%;
+    text-align: center;
+}
+
+#cidade-seletor {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#cidade-seletor:hover {
+    border-color: var(--secondary-color);
+}
+
+/* Botão de criar informações */
+#create-info-btn {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#create-info-btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* Blocos de profissionais */
+.profissionais-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.profissional-bloco {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profissional-bloco:hover {
+    transform: scale(1.05);
+}
+
+.profissional-bloco img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid var(--white);
+}
+
+.profissional-bloco h2 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+    font-weight: bold;
+}
+
+.profissional-bloco p {
+    font-size: 15px;
+    margin: 10px 0;
+    word-wrap: break-word;
+}
+
+.profissional-bloco a.delete-btn {
+    color: #ffcccb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.profissional-bloco a.delete-btn:hover {
+    color: #ff6961;
+}
+
+/* Footer */
+footer {
+    background-color: #1b5a72; /* Cor de fundo padronizada */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    flex-shrink: 0; /* Impede que o footer seja encolhido */
+    display: flex;
+    flex-direction: column; /* Adiciona flexbox em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    flex-wrap: wrap;
+    text-align: center; /* Centraliza o texto */
+}
+
+footer .footer-content .logo img {
+    height: 50px;
+}
+
+footer .contact-info {
+    font-size: 14px;
+    margin-bottom: 20px; /* Adiciona margem inferior para espaçamento */
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    height: 20px;
+    width: 20px;
+}
+
+footer .footer-bottom {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 100%; /* Garante que o texto ocupe toda a largura do footer */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cidade-seletor-container {
+        padding: 15px;
+    }
+
+    .profissional-bloco {
+        max-width: 100%;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .social-media a {
+        margin: 5px;
+    }
+}

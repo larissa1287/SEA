@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Substitua pelo URL da imagem de fundo */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Adiciona flexbox para organizar conteúdo */
+    min-height: 100vh; /* Garante que a altura mínima seja a altura total da tela */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid #0d5d82;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    max-height: 80px; /* Aumenta a altura máxima da logo */
+    width: auto; /* Mantém a proporção da logo */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0D5D82;
+}
+
+.usuario {
+    position: relative;
+}
+
+.usuario img {
+    max-height: 80px; /* Aumenta a altura máxima do ícone de usuário */
+    width: auto; /* Mantém a proporção do ícone */
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.usuario img:hover {
+    opacity: 0.8;
+}
+
+#login-popup {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    width: 180px;
+    text-align: center;
+}
+
+#login-popup a {
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+#login-popup a:hover {
+    color: #0D5D82;
+}
+
+/* Seção de boas-vindas */
+.welcome-section {
+    display: flex;
+    flex-direction: row; /* Organiza os elementos da seção em uma linha (imagem e texto lado a lado) */
+    justify-content: space-between; /* Adiciona espaço entre os elementos */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    text-align: left; /* Alinha o texto à esquerda */
+    color: #0D5D82; /* Define a cor do texto */
+    padding: 120px 80px; /* Espaçamento interno da seção */
+    background-image: url('Imagens/mar.png'); /* Adiciona a imagem de fundo do mar à seção */
+    background-size: cover; /* A imagem de fundo cobre toda a seção */
+    background-position: center; /* A imagem de fundo é centralizada */
+    margin: 80px auto; /* Centraliza a seção horizontalmente e adiciona margem superior */
+    max-width: 1200px; /* Aumenta a largura máxima da seção */
+}
+
+/* Ajuste do texto */
+.welcome-message {
+    width: 60%; /* Aumenta a largura do contêiner de texto para 60% */
+}
+
+.welcome-message h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.welcome-message p {
+    font-size: 22px;
+    margin: 2px;
+    line-height: 1.6;
+    color: #004080;
+}
+
+/* Estilo da imagem destacada ao lado do texto */
+.highlight-image {
+    margin-left: 80px; /* Aumenta o espaço entre a imagem e o texto */
+}
+
+.highlight-image img {
+    border-radius: 50%; /* Arredonda a imagem para que se torne uma bolinha */
+    width: 300px; /* Aumenta o tamanho da bolinha */
+    height: 300px; /* Aumenta o tamanho da bolinha */
+    border: 5px solid white; /* Adiciona uma borda branca ao redor da bolinha */
+    box-shadow: 4px 2px 4px #0d5d82;
+}
+
+/* Footer */
+footer {
+    background-color: #1b5a72;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; /* Garante que o footer seja empurrado para o final da página */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Centraliza o texto de contato no meio */
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center; /* Garante que o texto fique centralizado */
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6; /* Melhora o espaçamento entre as linhas */
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #0d5d82; /* Adiciona uma cor de hover */
+}
+
+.footer-bottom {
+    background-color: #154a5b;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Alinha os direitos autorais à esquerda */
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer-content .logo img {
+    max-height: 60px; /* Reduz a altura máxima da logo no rodapé */
+    width: auto; /* Mantém a proporção da logo */
+}

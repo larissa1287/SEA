@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Substitua pelo URL da imagem de fundo */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid #0A5296;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    max-height: 80px; /* Aumenta a altura máxima da logo */
+    width: auto; /* Mantém a proporção da logo */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0D5D82;
+}
+
+.usuario {
+    position: relative;
+}
+
+.usuario img {
+    max-height: 80px; /* Aumenta a altura máxima do ícone de usuário */
+    width: auto; /* Mantém a proporção do ícone */
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.usuario img:hover {
+    opacity: 0.8;
+}
+
+#login-popup {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    width: 180px;
+    text-align: center;
+}
+
+#login-popup a {
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+#login-popup a:hover {
+    color: #0D5D82;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px; /* Compensa a altura do header fixo */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo translúcido */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px; /* Adiciona mais espaço entre seções */
+}
+
+/* Estilos de Texto Inspirados na Imagem Fornecida */
+.section-content {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.section-content h2 {
+    color: #1A6F8B; /* Cor do título conforme a imagem */
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1A6F8B;
+    padding-bottom: 5px;
+}
+
+.section-content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    margin-top: 10px;
+    margin-left: 20px; /* Adiciona margem para alinhamento */
+    margin-right: 20px; /* Adiciona margem para alinhamento */
+}
+
+.section-content ul {
+    list-style-type: none; /* Removendo os marcadores da lista */
+    padding-left: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.section-content ul li {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.section-content ul li strong {
+    color: #1A6F8B; /* Destaque nos itens da lista com a cor do título */
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .section-content h2 {
+        font-size: 20px;
+    }
+
+    .section-content p,
+    .section-content ul li {
+        font-size: 16px;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: #1b5a72; /* Cor de fundo padronizada */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    flex-shrink: 0; /* Impede que o footer seja encolhido */
+    display: flex;
+    flex-direction: column; /* Adiciona flexbox em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    flex-wrap: wrap;
+    text-align: center; /* Centraliza o texto */
+}
+
+footer .footer-content .logo img {
+    height: 50px;
+}
+
+footer .contact-info {
+    font-size: 14px;
+    margin-bottom: 20px; /* Adiciona margem inferior para espaçamento */
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    height: 20px;
+    width: 20px;
+}
+
+footer .footer-bottom {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 100%; /* Garante que o texto ocupe toda a largura do footer */
+}

@@ -1,0 +1,206 @@
+/* Estilos globais */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100%; /* Garante que a altura mínima seja 100% */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    background-color: #f4f4f4; /* Fundo global */
+}
+
+/* Header */
+header {
+    background-color: #004b7a;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+}
+
+header .back-link {
+    margin-left: 10px;
+}
+
+header .back-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+/* Container */
+.container, .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
+    margin: 20px auto;
+    width: 50%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #004b7a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #004b7a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #003060;
+}
+
+/* Estilos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #004b7a;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="file"], input[type="password"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[disabled] {
+    background-color: #e9ecef;
+}
+
+input[type="submit"], button {
+    background-color: #004b7a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #003060;
+}
+
+.profile-pic {
+    text-align: center;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #1b5a72; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    /* padding: 20px 0; */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* position: relative; */
+    /* bottom: 0; */
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.footer-content .logo img {
+    max-height: 60px; /* Ajuste a altura conforme necessário */
+}
+
+.contact-info {
+    font-size: 14px;
+    text-align: left;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #154a5b; /* Cor de fundo para a parte inferior */
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+
+.footer-content {
+    /* margin: 0% 20% 0% 20%; */
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.footer-content p {
+    text-align: center;
+}
+
+.footer-content img {
+    max-width: 100px;
+}
+
+.footer-content .footer-line {
+    border-right: 1px solid black;
+    height: 50px;
+    border-color: white;
+}
+
+.footer-content .contact-info {
+    padding-left: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 0px 30px;
+}
+
+.social-media img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Certifica que o footer fique sempre na parte de baixo */
+html, body {
+    height: 100%;
+}

@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+/* Estilo da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    color: #0d5d82; /* Cor do texto principal */
+    background-color: #f4f4f4; /* Cor de fundo padrão */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura total da tela */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em uma coluna vertical */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #FFFFFF; /* Fundo branco sólido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 8px 2px 8px #0d5d82;
+}
+
+
+/* Espaço para compensar o cabeçalho fixo */
+body {
+    padding-top: 80px; /* Espaço para evitar que o conteúdo fique oculto sob o cabeçalho */
+}
+
+/* Estilos para a logo */
+.logo img {
+    width: 140%;
+    height: auto;
+}
+
+/* Navegação */
+nav ul {
+    list-style-type: none; /* Remove as bolinhas de lista padrão */
+    display: flex; /* Define a navegação em uma linha horizontal */
+    gap: 90px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #0D5D82; /* Cor do texto dos links */
+    font-weight: bold; /* Torna o texto dos links negrito */
+    transition: color 0.3s; /* Adiciona uma transição suave na mudança de cor */
+}
+
+nav ul li a:hover {
+    color: #31241E; /* Muda a cor do link ao passar o mouse */
+}
+
+/* Ícone de usuário */
+.usuario {
+    position: relative; /* Define a posição relativa para que o pop-up seja posicionado em relação a este elemento */
+}
+
+.usuario img {
+    max-height: 80px; /* Aumenta a altura máxima do ícone de usuário */
+    width: auto; /* Mantém a proporção do ícone */
+    cursor: pointer; /* Muda o cursor para "pointer" ao passar o mouse sobre o ícone */
+    transition: opacity 0.3s; /* Adiciona uma transição suave na opacidade */
+}
+
+.usuario img:hover {
+    opacity: 0.8; /* Reduz a opacidade do ícone ao passar o mouse, dando um efeito de destaque */
+}
+
+/* Pop-up de login */
+#login-popup {
+    display: none; /* O pop-up está oculto por padrão */
+    position: absolute; /* Posiciona o pop-up de forma absoluta em relação ao ícone de usuário */
+    top: 1.5px; /* Ajusta a posição do pop-up abaixo do ícone */
+    right: 80px; /* Alinha o pop-up à direita */
+    background-color: #FFFFFF; /* Fundo branco para o pop-up */
+    border: 1px solid #0D5D82; /* Adiciona uma borda cinza clara ao pop-up */
+    border-radius: 8px; /* Arredonda os cantos do pop-up */
+    padding: 6px 20px; /* Adiciona espaçamento interno ao pop-up */
+    width: 160px; /* Define a largura do pop-up */
+    text-align: center; /* Centraliza o texto dentro do pop-up */
+}
+
+#login-popup a {
+    text-decoration: none; /* Remove o sublinhado dos links dentro do pop-up */
+    color: #0D5D82; /* Define a cor do texto dos links */
+    font-weight: bold; /* Torna o texto dos links negrito */
+    display: block; /* Faz com que cada link ocupe uma linha inteira */
+    padding: 6px 0; /* Adiciona espaçamento entre os links */
+    transition: color 0.3s; /* Adiciona uma transição suave na mudança de cor */
+}
+
+#login-popup a:hover {
+    color: #31241E; /* Muda a cor do link ao passar o mouse */
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #004d80;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input[type="file"] {
+    margin-top: 10px;
+}
+
+#foto-preview {
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.full-width {
+    text-align: center;
+}
+
+.full-width button {
+    background-color: #004d80;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.full-width button:hover {
+    background-color: #00334d;
+}
+
+footer {
+    background-color: #1b5a72; /* Cor de fundo padronizada */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    flex-shrink: 0;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .footer-content .logo img {
+    height: 50px;
+}
+
+footer .contact-info {
+    font-size: 14px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    height: 20px;
+    width: 20px;
+}
+
+footer .footer-bottom {
+    margin-top: 10px;
+    font-size: 12px;
+}
